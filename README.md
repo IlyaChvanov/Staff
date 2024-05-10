@@ -1,7 +1,6 @@
 
 
 ## Лабораторный практикум StaffDemo
-## Дедлайн: 13 мая 00:00:00
 
 
 
@@ -91,13 +90,21 @@ for(Employee emp: staff) {
 
 - Interfaces.h 
 - Employee.h 
-- Manager.h 
-- Personal.h 
-- Engineer.h 
+- Personal.h
+- Programmer.h
+- ProjectManager.h
+- SeniorManager.h
+- Engineer.h
+- TeamLeader.h
+- Tester.h
 - Factory.h
 - Employee.cpp 
-- Personal.cpp 
-- Engineer.cpp 
-- Manager.cpp 
+- Personal.cpp
+- Programmer.cpp
+- ProjectManager.cpp
+- SeniorManager.cpp
+- Engineer.cpp
+- TeamLeader.cpp
+- Tester.cpp
 - Factory.cpp
 - main.cpp
