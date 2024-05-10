@@ -10,7 +10,7 @@ set(header ${header_path}/Interfaces.h ${header_path}/Employee.h ${header_path}/
 		../include/SeniorManager.h
 		SeniorManager.cpp
 		../include/SeniorManager.h)
-set(src Employee.cpp Personal.cpp Engineer.cpp Manager.cpp Factory.cpp
+set(src Employee.cpp Personal.cpp Engineer.cpp Factory.cpp
 		Tester.cpp
 		../include/Tester.h
 		Programmer.cpp

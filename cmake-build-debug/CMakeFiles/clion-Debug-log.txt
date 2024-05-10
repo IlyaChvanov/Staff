@@ -1,4 +1,13 @@
 "E:\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=E:/CLion 2023.3.4/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\user\Desktop\Kostin_cpp\StaffDemo -B C:\Users\user\Desktop\Kostin_cpp\StaffDemo\cmake-build-debug
--- Configuring done (0.1s)
--- Generating done (0.0s)
--- Build files have been written to: C:/Users/user/Desktop/Kostin_cpp/StaffDemo/cmake-build-debug
+-- Configuring done (1.3s)
+CMake Error at src/CMakeLists.txt:33 (add_library):
+  Cannot find source file:
+
+    C:/Users/user/Desktop/Kostin_cpp/StaffDemo/include/Manager.h
+
+
+CMake Error at src/CMakeLists.txt:33 (add_library):
+  No SOURCES given to target: StaffDemo
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
