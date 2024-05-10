@@ -1,0 +1,22 @@
+# ninja log v5
+30	3161	7368840620582836	src/CMakeFiles/StaffDemo.dir/Employee.cpp.obj	be0986cde65c4655
+378	516	7364298480686874	src/CMakeFiles/StaffDemo.dir/Manager.cpp.obj	55633d208fb32db8
+1	377	7364298479216878	src/CMakeFiles/StaffDemo.dir/Factory.cpp.obj	9237347be2a644ec
+4565	5823	7368840647327998	src/CMakeFiles/StaffDemo.dir/Engineer.cpp.obj	b8c2877ca55eafd8
+3161	4690	7368840636012835	src/CMakeFiles/StaffDemo.dir/Personal.cpp.obj	67d558f76d89d855
+1099	1341	7368873711033258	src/libStaffDemo.dll	f6cf9bf620dab955
+1099	1341	7368873711033258	src/libStaffDemo.dll.a	f6cf9bf620dab955
+7	181	7368842578061361	src/CMakeFiles/StaffDemo.info.dir/main.cpp.obj	31950bcacbdd86ee
+7	211	7368873714733267	src/StaffDemo.info.exe	ac95e92210bf6b6a
+11	3132	7368840620032837	src/CMakeFiles/StaffDemo.dir/Tester.cpp.obj	2f2f1ff6f69dc5b7
+34	3155	7368840620092828	src/CMakeFiles/StaffDemo.dir/TeamLeader.cpp.obj	27706a129019bcc2
+3156	4565	7368840634682837	src/CMakeFiles/StaffDemo.dir/Programmer.cpp.obj	9e132643e4ed1677
+3151	4574	7368840634762827	src/CMakeFiles/StaffDemo.dir/SeniorManager.cpp.obj	e6f31ceea68d9203
+4690	5974	7368840648857997	src/CMakeFiles/StaffDemo.dir/ProjectManager.cpp.obj	e857c3f765712c68
+5	1098	7368873708743269	src/CMakeFiles/StaffDemo.dir/demo.cpp.obj	36bda5d9bbc5d9b1
+1	246	7369697836256494	build.ninja	65feccf6408eec3f
+27	4178	7369700523585662	src/CMakeFiles/StaffDemo.dir/SeniorManager.cpp.obj	e6f31ceea68d9203
+7	4185	7369700523625705	src/CMakeFiles/StaffDemo.dir/Tester.cpp.obj	2f2f1ff6f69dc5b7
+22	4198	7369700523765660	src/CMakeFiles/StaffDemo.dir/TeamLeader.cpp.obj	27706a129019bcc2
+4179	5534	7369700537157132	src/CMakeFiles/StaffDemo.dir/Programmer.cpp.obj	9e132643e4ed1677
+4186	5682	7369700538626491	src/CMakeFiles/StaffDemo.dir/Employee.cpp.obj	be0986cde65c4655
