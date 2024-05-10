@@ -16,6 +16,6 @@ void Tester::decrement_errors() {
     found_errors--;
 }
 
-int Tester::calc_pro_additions(int payment_for_error) {
+int Tester::calc_pro_additions(int payment_for_error) const {
     return payment_for_error * found_errors;
 }

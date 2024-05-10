@@ -13,7 +13,7 @@ class Tester: public Engineer{
     void set_found_errors(size_t errors);
     void increment_errors();
     void decrement_errors();
-    int calc_pro_additions(int payment_for_error) override;
+    int calc_pro_additions(int payment_for_error) const override;
  private:
     size_t found_errors = 0;
 };

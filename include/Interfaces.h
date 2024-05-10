@@ -17,7 +17,7 @@ class ProjectBudget {
  public:
     virtual ~ProjectBudget() = default;;
     virtual double calc_budget_part() const = 0;
-    virtual int calc_pro_additions(int bonus) = 0;
+    virtual int calc_pro_additions(int bonus) const = 0;
 };
 
 #endif  // INCLUDE_INTERFACES_H_
