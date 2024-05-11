@@ -27,7 +27,7 @@ void Engineer::set_project(const Project* new_project) {
 
 void Engineer::print_info() const {
     Personal::print_info();
-    std::cout<<project->get_id()<<std::endl;
+    std::cout<<"Project id: "<<project->get_id()<<std::endl;
 }
 
 
