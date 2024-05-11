@@ -1,0 +1,3 @@
+"E:\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\StaffDemo.dir/objects.a
+C:\msys64\mingw64\bin\ar.exe qc CMakeFiles\StaffDemo.dir/objects.a @CMakeFiles\StaffDemo.dir\objects1.rsp
+C:\msys64\mingw64\bin\c++.exe -g -shared -o libStaffDemo.dll -Wl,--out-implib,libStaffDemo.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\StaffDemo.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\StaffDemo.dir\linkLibs.rsp
