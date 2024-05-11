@@ -21,12 +21,18 @@ void Personal::print_info() const {
     std::cout<<"salary for hour: "<<work_time_salary<<std::endl;
 }
 
-
-double Driver::calc_salary() const {
-    return calc_bonus_salary() + calc_base_salary();
+void Personal::set_bonus(double new_bonus) {
+    bonus = new_bonus;
 }
 
+double Personal::calc_salary() const {
+    return calc_base_salary() + calc_bonus_salary();
+}
 
-double Cleaner::calc_salary() const {
-    return calc_base_salary();
+double Driver::calc_bonus_salary() const {
+    return bonus;
+}
+
+double Cleaner::calc_bonus_salary() const {
+    return 0;
 }

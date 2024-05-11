@@ -24,7 +24,7 @@ int Project::get_id() const {
 
 Employee::Employee(int id, std::string  name, Positions position) :
     id(id),
-    name(std::move(name)),,
+    name(std::move(name)),
     position(position){}
 
 int Employee::get_id() const {
@@ -40,7 +40,7 @@ void Employee::print_info() const {
     cout<<"employee id: "<<id<<endl;
     cout<<"name: "<<name<<endl;
     cout<<"payment: "<<payment<<endl;
-    cout<<"position: "<<position<<endl;
+    cout<<"position: "<<enum_print[position]<<endl;
 
 }
 

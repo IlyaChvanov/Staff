@@ -175,14 +175,6 @@ build src/CMakeFiles/StaffDemo.dir/Engineer.cpp.obj: CXX_COMPILER__StaffDemo_uns
   OBJECT_DIR = src\CMakeFiles\StaffDemo.dir
   OBJECT_FILE_DIR = src\CMakeFiles\StaffDemo.dir
 
-build src/CMakeFiles/StaffDemo.dir/Manager.cpp.obj: CXX_COMPILER__StaffDemo_unscanned_Debug C$:/Users/user/Desktop/Kostin_cpp/StaffDemo/src/Manager.cpp || cmake_object_order_depends_target_StaffDemo
-  DEFINES = -DStaffDemo_EXPORTS
-  DEP_FILE = src\CMakeFiles\StaffDemo.dir\Manager.cpp.obj.d
-  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/user/Desktop/Kostin_cpp/StaffDemo/cmake-build-debug/src -IC:/Users/user/Desktop/Kostin_cpp/StaffDemo/include
-  OBJECT_DIR = src\CMakeFiles\StaffDemo.dir
-  OBJECT_FILE_DIR = src\CMakeFiles\StaffDemo.dir
-
 build src/CMakeFiles/StaffDemo.dir/Factory.cpp.obj: CXX_COMPILER__StaffDemo_unscanned_Debug C$:/Users/user/Desktop/Kostin_cpp/StaffDemo/src/Factory.cpp || cmake_object_order_depends_target_StaffDemo
   DEFINES = -DStaffDemo_EXPORTS
   DEP_FILE = src\CMakeFiles\StaffDemo.dir\Factory.cpp.obj.d
@@ -215,7 +207,7 @@ build src/CMakeFiles/StaffDemo.dir/main.cpp.obj: CXX_COMPILER__StaffDemo_unscann
 #############################################
 # Link the shared library src\libStaffDemo.dll
 
-build src/libStaffDemo.dll src/libStaffDemo.dll.a: CXX_SHARED_LIBRARY_LINKER__StaffDemo_Debug src/CMakeFiles/StaffDemo.dir/Tester.cpp.obj src/CMakeFiles/StaffDemo.dir/Programmer.cpp.obj src/CMakeFiles/StaffDemo.dir/TeamLeader.cpp.obj src/CMakeFiles/StaffDemo.dir/SeniorManager.cpp.obj src/CMakeFiles/StaffDemo.dir/Employee.cpp.obj src/CMakeFiles/StaffDemo.dir/Personal.cpp.obj src/CMakeFiles/StaffDemo.dir/Engineer.cpp.obj src/CMakeFiles/StaffDemo.dir/Manager.cpp.obj src/CMakeFiles/StaffDemo.dir/Factory.cpp.obj src/CMakeFiles/StaffDemo.dir/ProjectManager.cpp.obj src/CMakeFiles/StaffDemo.dir/main.cpp.obj
+build src/libStaffDemo.dll src/libStaffDemo.dll.a: CXX_SHARED_LIBRARY_LINKER__StaffDemo_Debug src/CMakeFiles/StaffDemo.dir/Tester.cpp.obj src/CMakeFiles/StaffDemo.dir/Programmer.cpp.obj src/CMakeFiles/StaffDemo.dir/TeamLeader.cpp.obj src/CMakeFiles/StaffDemo.dir/SeniorManager.cpp.obj src/CMakeFiles/StaffDemo.dir/Employee.cpp.obj src/CMakeFiles/StaffDemo.dir/Personal.cpp.obj src/CMakeFiles/StaffDemo.dir/Engineer.cpp.obj src/CMakeFiles/StaffDemo.dir/Factory.cpp.obj src/CMakeFiles/StaffDemo.dir/ProjectManager.cpp.obj src/CMakeFiles/StaffDemo.dir/main.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -g
   LINK_LIBRARIES = -lpthread  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = src\CMakeFiles\StaffDemo.dir

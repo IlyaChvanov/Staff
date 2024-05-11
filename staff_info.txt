@@ -76,7 +76,6 @@ team_leader
 9
 project_manager
 3
-17
 13
 Бакурский Андрей Сергеевич
 700

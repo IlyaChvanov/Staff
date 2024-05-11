@@ -16,7 +16,7 @@ double Engineer::calc_budget_part() const {
     return project->get_budget() / budget_part;
 }
 double Engineer::calc_salary() const {
-    return calc_base_salary() + calc_budget_part();
+    return calc_base_salary() + calc_budget_part() + calc_bonus_salary();
 }
 
 void Engineer::set_project(const Project* new_project) {

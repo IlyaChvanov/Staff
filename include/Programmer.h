@@ -13,8 +13,8 @@ class Programmer : public Engineer {
     void set_addition_for_premature(int addition_for_premature);
     void Prematurely();
     void Not_prematurely();
-    virtual double cals_pro_additions() const;
-    double calc_salary() const override;
+    virtual double calc_pro_additions(int bonus) const;
+    virtual double calc_bonus_salary() const;
 
  private:
     int addition_for_premature = 10;

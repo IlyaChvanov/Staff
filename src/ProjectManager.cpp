@@ -5,6 +5,14 @@
 #include "ProjectManager.h"
 #include <iostream>
 
+ProjectManager::ProjectManager(int id, const std::string &name,
+                               Positions position,
+                               std::vector<const Employee*>& team,
+                               const Project* project) :
+        Employee(id, name, position),
+        team(team), project(project) {}
+
+
 void ProjectManager::print_info() const {
     Employee::print_info();
     std::cout<<"team: "<<std::endl;
@@ -31,15 +39,17 @@ double ProjectManager::bonus_for_worker() const {
 }
 
 double ProjectManager::calc_salary() const {
-    return project->get_budget() * budget_part + bonus_for_worker();
+    return calc_budget_part() + calc_pro_additions(0);
 }
 
-ProjectManager::ProjectManager(int id, const std::string &name,
-                               Positions position,
-                               std::vector<const Employee*>& team,
-                               const Project* project) :
-                               Employee(id, name, position),
-                               team(team), project(project) {}
+double ProjectManager::calc_budget_part() const {
+    return budget_part * project->get_budget();
+}
+
+double ProjectManager::calc_pro_additions(int bonus) const {
+    return bonus_for_worker();
+}
+
 
 
 

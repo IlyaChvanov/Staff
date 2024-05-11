@@ -16,6 +16,14 @@ void Tester::decrement_errors() {
     found_errors--;
 }
 
-int Tester::calc_pro_additions(int payment_for_error) const {
+double Tester::calc_pro_additions(int payment_for_error) const {
     return payment_for_error * found_errors;
+}
+
+double Tester::calc_bonus_salary() const {
+    return calc_pro_additions(payment_for_error);
+}
+
+void Tester::setPaymentForError(double payment_for_error) {
+    payment_for_error = payment_for_error;
 }

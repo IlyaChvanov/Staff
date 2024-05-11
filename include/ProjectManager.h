@@ -14,6 +14,8 @@ class ProjectManager: public Employee, public ProjectBudget, public Heading {
                    std::vector<const Employee*>& team,
                    const Project* project);
     double bonus_for_worker() const override;
+    double calc_budget_part() const override;
+    double calc_pro_additions(int bonus) const override;
     void set_payment_for_worker(double x);
     void set_budget_part(double x);
     void set_project(const Project* new_project);
