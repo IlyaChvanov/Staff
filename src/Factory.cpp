@@ -2,38 +2,10 @@
 // Created by user on 03.05.2024.
 //
 #include "Factory.h"
-#include <map>
 
 using std::ifstream, std::vector, std::string;
-void Factory::Make_staff() {
-
-    ifstream staff_info("..//..//staff_info.txt");
-    ifstream projects_info("..//..//projects_info.txt");
-
-    while (!projects_info.eof()) {
-        vector<string> st_project;
-        string field_of_project;
-        for (int i = 0; i < 3; i++) {
-            getline(projects_info, field_of_project);
-            st_project.push_back(field_of_project);
-        }
-        int id = std::stoi(st_project[0]);
-        int budget = std::stoi(st_project[1]);
-        int number_of_employees = std::stoi(st_project[2]);
-
-        Project *project = nullptr;
-        project = new Project(id, budget, number_of_employees);
-        projects.push_back(project);
-    }
-
-    std::map<string, Positions> string_to_enum;
-    string_to_enum["programmer"] = Positions::programmer;
-    string_to_enum["team_leader"] = Positions::team_leader;
-    string_to_enum["project_manager"] = Positions::project_manager;
-    string_to_enum["senior_manager"] = Positions::senior_manager;
-    string_to_enum["cleaner"] = Positions::cleaner;
-    string_to_enum["driver"] = Positions::driver;
-    string_to_enum["tester"] = Positions::tester;
+void Factory::read_staff(std::string& path) {
+    ifstream staff_info(path);
     while (!staff_info.eof()) {
         vector<string> person;
         string field_of_employee;
@@ -47,7 +19,7 @@ void Factory::Make_staff() {
         int work_time = std::stoi(person[3]);
         int salary = std::stoi(person[2]);
         int project_id = std::stoi(person[5]);
-        Positions position = string_to_enum[person[4]];
+        Positions position = string_to_enum.at(person[4]);
         Project *project = nullptr;
 
         for (const auto project1: projects) {
@@ -100,7 +72,34 @@ void Factory::Make_staff() {
 
     }
 
-    staff_info.close();
-    projects_info.close();
 
 }
+
+void Factory::read_projects(std::string& path) {
+    ifstream projects_info(path);
+    while (!projects_info.eof()) {
+        vector<string> st_project;
+        string field_of_project;
+        for (int i = 0; i < 3; i++) {
+            getline(projects_info, field_of_project);
+            st_project.push_back(field_of_project);
+        }
+        int id = std::stoi(st_project[0]);
+        int budget = std::stoi(st_project[1]);
+        int number_of_employees = std::stoi(st_project[2]);
+
+        projects.push_back(new Project(id, budget, number_of_employees));
+    }
+}
+
+
+void Factory::Make_staff() {
+    string staff_info("..//..//staff_info.txt");
+    string projects_info("..//..//projects_info.txt");
+
+    read_projects(projects_info);
+    read_staff(staff_info);
+}
+
+
+
