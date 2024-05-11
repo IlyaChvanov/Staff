@@ -9,6 +9,10 @@ int main() {
     Factory Intel;
     Intel.Make_staff();
     for (const auto staff: Intel.staff) {
+        staff->set_payment();
+    }
+
+    for (const auto staff: Intel.staff) {
         staff->print_info();
         std::cout<<std::endl;
     }

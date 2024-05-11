@@ -13,7 +13,9 @@ void Engineer::set_budget_part(double x) {
     budget_part = x;
 }
 double Engineer::calc_budget_part() const {
-    return project->get_budget() / budget_part;
+    if (budget_part != 0)
+        return project->get_budget() / budget_part;
+    return 0;
 }
 double Engineer::calc_salary() const {
     return calc_base_salary() + calc_budget_part() + calc_bonus_salary();

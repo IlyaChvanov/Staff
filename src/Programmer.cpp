@@ -14,7 +14,7 @@ void Programmer::Not_prematurely() {
 
 double Programmer::calc_pro_additions(int addition_for_premature)const {
     if(is_prematurely) {
-        return bonus;
+        return addition_for_premature;
     }
     return 0;
 }

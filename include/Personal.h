@@ -17,7 +17,7 @@ class Personal : public Employee, public WorkBaseTime {
  protected:
     int work_time;
     double work_time_salary;
-    double bonus;
+    double bonus = 0;
 };
 
 class Driver : public Personal {

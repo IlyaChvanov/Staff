@@ -1,5 +1,5 @@
 set(header_path "${${PROJECT_NAME}_SOURCE_DIR}/include")
-set(header ${header_path}/Interfaces.h ${header_path}/Employee.h ${header_path}/Manager.h ${header_path}/Personal.h ${header_path}/Engineer.h ${header_path}/Factory.h
+set(header ${header_path}/Interfaces.h ${header_path}/Employee.h ${header_path}/Personal.h ${header_path}/Engineer.h ${header_path}/Factory.h
 		Tester.cpp
 		../include/Tester.h
 		Programmer.cpp

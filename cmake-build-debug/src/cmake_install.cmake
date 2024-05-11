@@ -55,7 +55,6 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES
     "C:/Users/user/Desktop/Kostin_cpp/StaffDemo/include/Interfaces.h"
     "C:/Users/user/Desktop/Kostin_cpp/StaffDemo/include/Employee.h"
-    "C:/Users/user/Desktop/Kostin_cpp/StaffDemo/include/Manager.h"
     "C:/Users/user/Desktop/Kostin_cpp/StaffDemo/include/Personal.h"
     "C:/Users/user/Desktop/Kostin_cpp/StaffDemo/include/Engineer.h"
     "C:/Users/user/Desktop/Kostin_cpp/StaffDemo/include/Factory.h"

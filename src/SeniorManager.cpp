@@ -10,7 +10,8 @@ double SeniorManager::calc_salary() const {
     for (const auto project : projects) {
         salary += project->get_budget() * budget_part;
     }
-    salary += team.size() * payment_for_worker;
+    salary+= team.size() * payment_for_worker;
+    return salary;
 }
 
 void SeniorManager::print_info() const {
