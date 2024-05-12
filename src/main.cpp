@@ -5,7 +5,7 @@
 #include "clocale"
 
 int main() {
-    setlocale( LC_ALL , "russian_russia.866" );
+    setlocale(LC_ALL , "russian_russia.866");
     Factory Intel;
     Intel.Make_staff();
     for (const auto staff: Intel.staff) {
