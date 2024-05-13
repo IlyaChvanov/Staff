@@ -28,7 +28,7 @@ class Project {
 class Employee {
  public:
     Employee(int id, std::string name, Positions position);
-    virtual ~Employee();
+    virtual ~Employee() = default;
     [[nodiscard]] int get_id() const;
     [[nodiscard]] std::string get_name() const;
     [[nodiscard]] virtual double calc_salary() const = 0;
