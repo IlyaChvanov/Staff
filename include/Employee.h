@@ -29,9 +29,9 @@ class Employee {
  public:
     Employee(int id, std::string name, Positions position);
     virtual ~Employee() = default;
-    [[nodiscard]] int get_id() const;
-    [[nodiscard]] std::string get_name() const;
-    [[nodiscard]] virtual double calc_salary() const = 0;
+    int get_id() const;
+    std::string get_name() const;
+    virtual double calc_salary() const = 0;
     virtual void print_info() const;
     void set_payment();
 
