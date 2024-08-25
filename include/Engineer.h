@@ -6,11 +6,13 @@
 #include "Personal.h"
 #include "Interfaces.h"
 
+#include <memory>
+
 class Engineer: public Personal, public ProjectBudget {
  public:
     Engineer(int id, const std::string& name,
              int workTime, int salary, Positions position,
-             const Project* project);
+             std::shared_ptr<const Project> project);
     void set_project(const Project* project);
     void set_budget_part(double x);
     void print_info() const override;
@@ -18,7 +20,7 @@ class Engineer: public Personal, public ProjectBudget {
     double calc_salary() const override;
  protected:
     double budget_part = 0;
-    const Project* project;
+    std::shared_ptr<const Project> project;
 };
 
 

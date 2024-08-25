@@ -3,9 +3,11 @@
 //
 #include "Engineer.h"
 
+#include <utility>
+
 Engineer::Engineer(int id, const std::string &name, int workTime,
                    int salary, Positions position,
-                   const Project *project) :
+                   std::shared_ptr<const Project> project) :
                    Personal(id, name, position, workTime, salary),
                    project(project) {}
 
@@ -22,7 +24,7 @@ double Engineer::calc_salary() const {
 }
 
 void Engineer::set_project(const Project* new_project) {
-    project = new_project;
+    project = std::shared_ptr<const Project>(new_project);
 }
 
 void Engineer::print_info() const {

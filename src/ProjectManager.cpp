@@ -4,13 +4,14 @@
 
 #include "ProjectManager.h"
 #include <iostream>
+#include <utility>
 
 ProjectManager::ProjectManager(int id, const std::string &name,
                                Positions position,
-                               std::vector<const Employee*>& team,
-                               const Project* project) :
+                               std::vector<std::shared_ptr<const Employee>>& team,
+                               std::shared_ptr<const Project> project) :
         Employee(id, name, position),
-        team(team), project(project) {}
+        team(team), project(std::move(project)) {}
 
 
 void ProjectManager::print_info() const {
@@ -30,8 +31,8 @@ void ProjectManager::set_budget_part(double x) {
     budget_part = x;
 }
 
-void ProjectManager::set_project(const Project *new_project) {
-    project = new_project;
+void ProjectManager::set_project(std::shared_ptr<const Project> new_project) {
+    project = std::move(new_project);
 }
 
 double ProjectManager::bonus_for_worker() const {

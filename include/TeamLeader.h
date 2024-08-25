@@ -10,10 +10,11 @@ class TeamLeader : public Programmer, public Heading {
  public:
     TeamLeader(int id, const std::string& name,
                int workTime, int salary, Positions position,
-               const Project* project, std::vector<const Programmer*>& team);
+               std::shared_ptr<const Project> project,
+               std::vector<std::shared_ptr<const Programmer>>&);
     void set_payment_for_worker(double x);
     double bonus_for_worker() const override;
-    void add_programmer_to_team(const Programmer* programmer);
+    void add_programmer_to_team(const std::shared_ptr<const Programmer>& programmer);
     void set_addition_for_premature(int x)=delete;
     void Prematurely()=delete;
     void Not_prematurely()=delete;
@@ -22,7 +23,7 @@ class TeamLeader : public Programmer, public Heading {
 
  private:
     double payment_for_worker = 1;
-    std::vector<const Programmer*> team;
+    std::vector<std::shared_ptr<const Programmer>>& team;
 
 };
 

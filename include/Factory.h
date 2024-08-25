@@ -13,13 +13,14 @@
 #include <iostream>
 #include <vector>
 #include <map>
+#include <memory>
 
 using std::vector;
 class Factory {
  public:
     void Make_staff();
-    vector<Employee*> staff;
-    vector<Project*> projects;
+  std::vector<std::shared_ptr<Employee>> staff;
+  std::vector<std::shared_ptr<Project>> projects;
  private:
     static const inline std::map<std::string, Positions> string_to_enum = {
         {"programmer", Positions::programmer},
@@ -31,8 +32,8 @@ class Factory {
         {"tester", Positions::tester}
 
     };
-    void read_staff(std::string& path);
-    void read_projects(std::string& path);
+    void read_staff(const std::string& path);
+    void read_projects(const std::string& path);
 };
 
 #endif //STAFFDEMO_FACTORY_H
